@@ -1,0 +1,233 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fffffe;
+}
+
+.card-spek {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    height: 1100px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* HEADER */
+header.navbar-container {
+    width: 100%;
+    padding-block: 1rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9999;
+}
+
+header.navbar-container .logo img {
+    width: 150px;
+}
+
+header.navbar-container .search a i {
+    font-size: 1.40rem;
+    color: black;
+}
+
+header.navbar-container .search a i:hover {
+    color: #B31312;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 3rem 2rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list .home-car a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.60rem;
+    font-weight: 800;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+    background-color: #B31312;
+    color: white;
+}
+
+/* MAIN */
+main .content-description {
+    background-image: url('../img/TOYOTA-YARIS-CROSS.jpg');
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2b2c34;
+    text-align: center;
+    font-size: 1.10rem;
+}
+
+main .content-description {
+    display: flex;
+    flex-direction: column;
+}
+
+main .content-description .title {
+    font-size: 1.9rem;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+
+main .content-description p {
+    font-size: 1.05rem;
+    letter-spacing: 2px;
+}
+
+main .content-description button {
+    align-self: center;
+    flex-basis: 40px;
+}
+
+main .content-description button {
+    padding: 0.8rem 2.5rem;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    margin-block-start: 1rem;
+    background-color: #B31312;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+main .content-description button:hover {
+    border: 3px solid #2d3e50;
+    background-color: transparent;
+    color: #2d3e50;
+}
+
+main .specifications {
+    width: 100%;
+    padding-block: 1rem;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .specifications .dropdown-content a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+main .specifications .dropdown-content a:hover {
+    background-color: #B31312;
+    color: white;
+}
+
+main .specifications .dropdown-content a.visited-link {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: underline;
+    text-decoration-color: #B31312;
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: #B31312;
+}
+
+main .content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+main .exterior-specifications, .interior-specifications, .performance-specifications {
+    display: flex;
+    flex: 2;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 10px;
+    max-width: 1160px;
+}
+
+main .interior-specifications, .performance-specifications {
+    display: none;
+}
+
+
+main .exterior-specifications figure, .interior-specifications figure, .performance-specifications figure {
+    margin: 10px;
+    padding: 0px 20px;
+}
+
+main .content-specifications figure img {
+    max-width: 500px;
+}
+
+main .content-specifications figcaption {
+    max-width: 500px;
+    text-wrap: wrap;
+    font-size: 0.90rem;
+}
+
+
+/* ASIDE */
+aside {
+    display: flex;
+    flex: 1;
+    flex-flow: column wrap;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    max-height: 100%;
+    margin-top: -10px;
+}
+
+aside .detail-specifications section h4 {
+    margin-bottom: 5px;
+    text-decoration: underline;
+    text-decoration-color: #B31312;
+}
